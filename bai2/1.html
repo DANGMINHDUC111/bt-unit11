@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	nav
+	{
+		width: 55%;
+		margin: auto;
+		background: gray;
+		position: relative;
+	}
+	li
+	{
+		list-style: none;
+	}
+	a
+	{
+		text-decoration: none;
+	}
+	.list1
+	{
+		padding-left: 0;
+	}
+	.item1
+	{
+		display: inline-block;
+		padding:10px 7px;
+	}
+	.item1>a
+	{
+		padding: 5px;
+		font-size: 17px;
+		color: white;
+		font-weight: bold;
+
+	}
+	.item1>a:first-child
+	{
+		padding-left: 0;
+		margin-left:0;
+	}
+	.list2
+	{
+		position: absolute;
+		background: gray;
+		padding-left: 0;
+		display: none;
+		top: 40px;
+	}
+	.item2
+	{
+		padding:5px 10px;
+		border-bottom: 1px solid green;
+	}
+	.item2>a,.item3>a
+	{
+		color: white;
+		font-weight: bold;
+		
+	}
+	.list3
+	{
+		position: absolute;
+		background: gray;
+		padding-left: 0;
+		display: none;
+		top: 2px;
+		left: 171px;
+	}
+	.item3
+	{
+		padding:5px 10px;
+		border-bottom: 1px solid green;
+		width: 145px;
+	}
+	li:hover
+	{
+		cursor: pointer;
+	}
+</style>
+<body>
+	<nav>
+		<ul class="list1">
+			<li class="item1">
+				<a href="">Home</a>
+				<ul class="list2"> <!-- bat dau list2 -->
+					<li class="item2">
+						<a href="">Web design</a>
+						<!-- bat dau list3 -->
+						<ul class="list3">
+							<li class="item3">
+								<a href="">Web development</a>
+							</li>
+							<li class="item3">
+								<a href="">Services</a>
+							</li>
+							<li class="item3">
+								<a href="">Portofolio</a>
+							</li>
+						</ul> <!-- end list3 -->
+					</li>
+					<li class="item2">
+						<a href="">Web development</a>
+					</li>
+					<li class="item2">
+						<a href="">Logo and print design</a>
+					</li>
+					<li class="item2">
+						<a href="">Web design</a>
+					</li>
+					<li class="item2">
+						<a href="">Web development</a>
+					</li>
+				</ul><!--  end list2 -->
+			</li>
+			<li class="item1">
+				<a href="">Profile</a>
+				<ul class="list2"> <!-- bat dau list2 -->
+					<li class="item2">
+						<a href="">Web design</a>
+						<!-- bat dau list3 -->
+						<ul class="list3">
+							<li class="item3">
+								<a href="">Web development</a>
+							</li>
+							<li class="item3">
+								<a href="">Services</a>
+							</li>
+							<li class="item3">
+								<a href="">Portofolio</a>
+							</li>
+						</ul> <!-- end list3 -->
+					</li>
+					<li class="item2">
+						<a href="">Web development</a>
+					</li>
+					<li class="item2">
+						<a href="">Logo and print design</a>
+					</li>
+					<li class="item2">
+						<a href="">Web design</a>
+					</li>
+					<li class="item2">
+						<a href="">Web development</a>
+					</li>
+				</ul><!--  end list2 -->
+				
+			</li>
+			<li class="item1">
+				<a href="">Services</a>
+				<ul class="list2"> <!-- bat dau list2 -->
+					<li class="item2">
+						<a href="">Web design</a>
+						<!-- bat dau list3 -->
+						<ul class="list3">
+							<li class="item3">
+								<a href="">Web development</a>
+							</li>
+							<li class="item3">
+								<a href="">Services</a>
+							</li>
+							<li class="item3">
+								<a href="">Portofolio</a>
+							</li>
+						</ul> <!-- end list3 -->
+					</li>
+					<li class="item2">
+						<a href="">Web development</a>
+					</li>
+					<li class="item2">
+						<a href="">Logo and print design</a>
+					</li>
+					<li class="item2">
+						<a href="">Web design</a>
+					</li>
+					<li class="item2">
+						<a href="">Web development</a>
+					</li>
+				</ul><!--  end list2 -->
+			</li>
+			<li class="item1">
+				<a href="">Portofolio</a>
+				<ul class="list2"> <!-- bat dau list2 -->
+					<li class="item2">
+						<a href="">Web design</a>
+						<!-- bat dau list3 -->
+						<ul class="list3">
+							<li class="item3">
+								<a href="">Web development</a>
+							</li>
+							<li class="item3">
+								<a href="">Services</a>
+							</li>
+							<li class="item3">
+								<a href="">Portofolio</a>
+							</li>
+						</ul> <!-- end list3 -->
+					</li>
+					<li class="item2">
+						<a href="">Web development</a>
+					</li>
+					<li class="item2">
+						<a href="">Logo and print design</a>
+					</li>
+					<li class="item2">
+						<a href="">Web design</a>
+					</li>
+					<li class="item2">
+						<a href="">Web development</a>
+					</li>
+				</ul><!--  end list2 -->
+			</li>
+			<li class="item1">
+				<a href="">Pengen ke Arab</a>
+				<ul class="list2"> <!-- bat dau list2 -->
+					<li class="item2">
+						<a href="">Web design</a>
+						<!-- bat dau list3 -->
+						<ul class="list3">
+							<li class="item3">
+								<a href="">Web development</a>
+							</li>
+							<li class="item3">
+								<a href="">Services</a>
+							</li>
+							<li class="item3">
+								<a href="">Portofolio</a>
+							</li>
+						</ul> <!-- end list3 -->
+					</li>
+					<li class="item2">
+						<a href="">Web development</a>
+					</li>
+					<li class="item2">
+						<a href="">Logo and print design</a>
+					</li>
+					<li class="item2">
+						<a href="">Web design</a>
+					</li>
+					<li class="item2">
+						<a href="">Web development</a>
+					</li>
+				</ul><!--  end list2 -->
+			</li>
+			<li class="item1">
+				<a href="">Beasiswa	S2 Go!! Goo!!</a>
+				<ul class="list2"> <!-- bat dau list2 -->
+					<li class="item2">
+						<a href="">Web design</a>
+						<!-- bat dau list3 -->
+						<ul class="list3">
+							<li class="item3">
+								<a href="">Web development</a>
+							</li>
+							<li class="item3">
+								<a href="">Services</a>
+							</li>
+							<li class="item3">
+								<a href="">Portofolio</a>
+							</li>
+						</ul> <!-- end list3 -->
+					</li>
+					<li class="item2">
+						<a href="">Web development</a>
+					</li>
+					<li class="item2">
+						<a href="">Logo and print design</a>
+					</li>
+					<li class="item2">
+						<a href="">Web design</a>
+					</li>
+					<li class="item2">
+						<a href="">Web development</a>
+					</li>
+				</ul><!--  end list2 -->
+			</li>
+			<li class="item1">
+				<a href="">Hire me</a>
+				
+			</li>
+		</ul>
+	</nav>
+	<script src="jquery.min.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			$('.item1').hover(function() {
+				$(this).css('background','green');
+				$(this).children().css('color','black');
+				$(this).children('.list2').show();
+			}, function() {
+				$(this).css('background','gray');
+				$(this).children().css('color','white');
+				$(this).children('.list2').hide();
+			});
+			$('.item2').hover(function() {
+				$(this).css('background','green');
+				$(this).children().css('color','black');
+				$(this).children('.list3').show();
+			}, function() {
+				$(this).css('background','gray');
+				$(this).children().css('color','white');
+				$(this).children('.list3').hide();
+			});
+			$('.item3').hover(function() {
+				$(this).css('background','green');
+				$(this).children().css('color','black');
+				
+			}, function() {
+				$(this).css('background','gray');
+				$(this).children().css('color','white');
+				
+			});
+		});
+	</script>
+</body>
+</html>

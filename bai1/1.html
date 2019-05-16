@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.container
+		{
+			width: 60%;
+			margin: auto;
+			position: relative;
+		}
+		.container>h1
+		{
+			text-align: center;
+			color: red;
+		}
+		.anhnho
+		{
+			display: inline-block;
+			margin: 10px;
+			width: 100px;
+			height: 100px;
+		}
+		.anhto
+		{
+			width: 100%;
+			text-align: center;
+			background: #3c3535ad;
+			padding-top: 50px;
+			position: absolute;
+			top: 0;
+			display: none;
+		}
+		.anhto>span
+		{
+			position: absolute;
+			top: 5px;
+			right: 10px;
+			cursor: pointer;
+			color: red;
+			background: gray;
+			padding: 5px;
+		}
+		.anhto>h2
+		{
+			color: red;
+		}
+		.anhto>span:hover
+		{
+			color: black;
+		}
+		.anhnho:hover
+		{
+			cursor: pointer;
+			
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Tạo lightbox</h1>
+
+		<div class="anhnho">
+			<img src="images/1.jpg" alt="" width="100px" height="100px" >
+			
+			
+		</div>
+		<div class="anhto">
+				<img src="images/1.jpg" alt="">
+				<h2>Ảnh đẹp</h2>
+				<span>X</span>
+		</div> <!-- end ảnh to -->
+
+		<div class="anhnho">
+			<img src="images/2.jpg" alt="" width="100px" height="100px" >
+			
+		</div>
+		<div class="anhto">
+				<img src="images/2.jpg" alt="">
+				<h2>Ảnh đẹp</h2>
+				<span>X</span>
+		</div> <!-- end ảnh to -->
+		<div class="anhnho">
+			<img src="images/3.jpg" alt="" width="100px" height="100px" >
+			
+		</div>
+		<div class="anhto">
+				<img src="images/3.jpg" alt="">
+				<h2>Ảnh đẹp</h2>
+				<span>X</span>
+		</div> <!-- end ảnh to -->
+		<div class="anhnho">
+			<img src="images/1.jpg" alt="" width="100px" height="100px" >
+			
+		</div>
+		<div class="anhto">
+				<img src="images/1.jpg" alt="">
+				<h2>Ảnh đẹp</h2>
+				<span>X</span>
+		</div> <!-- end ảnh to -->
+
+		<div class="anhnho">
+			<img src="images/2.jpg" alt="" width="100px" height="100px" >
+			
+		</div>
+		<div class="anhto">
+				<img src="images/2.jpg" alt="">
+				<h2>Ảnh đẹp</h2>
+				<span>X</span>
+		</div> <!-- end ảnh to -->
+
+		<div class="anhnho">
+			<img src="images/3.jpg" alt="" width="100px" height="100px" >
+			
+		</div>
+		<div class="anhto">
+				<img src="images/3.jpg" alt="">
+				<h2>Ảnh đẹp</h2>
+				<span>X</span>
+		</div> <!-- end ảnh to -->
+		
+
+	</div>
+	<script src="jquery.min.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			$('.anhto span').click(function(event) {
+				$(this).parent().hide();
+
+				
+			});
+			$('.anhnho').click(function(event) {
+				$(this).next().show(1000);
+			});
+			
+			
+		});
+	</script>
+</body>
+</html>
